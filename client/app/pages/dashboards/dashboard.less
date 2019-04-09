@@ -154,14 +154,14 @@
 
   /* X axis dots */
   &::before {
-    background: linear-gradient(to right, transparent, transparent 1px, #F6F8F9 1px, #F6F8F9), linear-gradient(to bottom, #496e81, #496e81 1px, transparent 1px, transparent);
+    background: linear-gradient(to right, transparent, transparent 1px, #F6F8F9 1px, #F6F8F9), linear-gradient(to bottom, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
     background-size: 5px 50px;
     background-position-y: -8px;
   }
 
   /* Y axis dashes */
   &::after {
-    background: linear-gradient(to bottom, transparent, transparent 2px, #F6F8F9 2px, #F6F8F9 5px), linear-gradient(to left, #9fb3bc, #9fb3bc 1px, transparent 1px, transparent);
+    background: linear-gradient(to bottom, transparent, transparent 2px, #F6F8F9 2px, #F6F8F9 5px), linear-gradient(to left, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
     background-size: calc((100vw - 15px) / 6) 5px;
     background-position: -7px 1px;
   }
@@ -169,4 +169,8 @@
 
 .dashboard-widget-wrapper, .grid-stack-placeholder {
   z-index: 1;
+}
+
+.grid-stack-placeholder > .placeholder-content {
+  background-color: rgba(224, 230, 235, 0.4) !important;
 }
